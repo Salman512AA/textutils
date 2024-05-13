@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 
 
 
-function About({}) {
+function About() {
     const [mystyle,setmystyle]=useState({
         color:'black',
         backgroundColor:'white',
