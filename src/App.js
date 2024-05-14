@@ -47,9 +47,9 @@ function App() {
   <Alert alert={alert}/>
   <div className="container">
   <Routes>
-          <Route path="/about"  element={<About />}>
+          <Route path="/about"  element={<About mode={mode}/>}>
            </Route>
-          <Route path="/" element={<Form  ty="ENTER TEXT HERE" mode={mode}  showAlert={showAlert}/>}>
+          <Route path="/" element={<Form  ty="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}  showAlert={showAlert}/>}>
           </Route>
  </Routes>
   {/* <Form  ty="ENTER TEXT HERE" mode={mode}  showAlert={showAlert}/> */}
