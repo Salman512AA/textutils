@@ -62,7 +62,7 @@ function Form({ty,mode,showAlert}) {
     </div>
     <div className="container my-3"style={{color: mode === 'dark' ? 'white': 'black'}}>
        <h2>Your text summary</h2>
-       <p> {text.split(" ").filter((elem)=>{return elem.length!==0}).length} words {text.length} charachters</p>
+       <p> {text.split(/\s+/).filter((elem)=>{return elem.length!==0}).length} words {text.length} charachters</p>
        <p> {0.008*text.split(" ").filter((elem)=>{return elem.length!==0}).length} Minitue Read </p>
        <h2>PREVIEW</h2>
        <p>{text.length>0? text:"Nothing To Preview!"}</p>
